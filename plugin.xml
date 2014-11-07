@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.cranberrygame.phonegap.plugin.moreapps"
+    version="1.0.0">
+	
+    <name>Phonegap MoreApps plugin</name>
+    <description>Phonegap MoreApps plugin</description>
+    <author>Sang Ki Kwon (Cranberrygame)</author>		
+    <license>MIT</license>
+    <keywords>phonegap, plugin, moreapps</keywords>
+    <repo>https://github.com/cranberrygame/com.cranberrygame.phonegap.plugin.moreapps</repo>
+    <issue>https://github.com/cranberrygame/com.cranberrygame.phonegap.plugin.ad.moreapps/issues</issue> 	
+	<engines>
+	    <engine name="cordova" version=">=3.0.0" />
+	</engines>
+	
+    <dependency id="org.apache.cordova.inappbrowser" version="0.5.2"/>	
+	
+    <js-module src="www/moreapps.js">
+        <clobbers target="window.moreapps"/>
+    </js-module>
+	
+    <!-- wp8 -->
+    <platform name="wp8">
+        <config-file target="config.xml" parent="/*">
+            <feature name="MoreApps">
+                <param name="wp-package" value="MoreApps"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/wp8/MoreApps.cs" />
+    </platform>	
+</plugin>
