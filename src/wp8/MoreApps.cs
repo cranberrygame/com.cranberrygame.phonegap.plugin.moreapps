@@ -17,20 +17,18 @@ namespace Cordova.Extension.Commands
     public class MoreApps : BaseCommand
     {
 
-        public void openMoreAppsUrl(string args)
+        public async void openMoreAppsUrl(string args)
         {
 			Debug.WriteLine("test");
   
 			//JsonHelper.Deserialize<string[]>(args)[0];
 
 			string moreAppsUrl=JsonHelper.Deserialize<string[]>(args)[0];
-				
-			//http://stackoverflow.com/questions/20445226/how-to-open-the-list-of-apps-from-the-same-publisher-on-the-marketplace
-			//Search for an application, which is the default content type.
-			MarketplaceSearchTask marketplaceSearchTask = new MarketplaceSearchTask();
-			marketplaceSearchTask.SearchTerms = moreAppsUrl; //"\"RT Apps\"";
-			marketplaceSearchTask.Show();
-				
+
+			//http://msdn.microsoft.com/en-us/library/windows/apps/jj662937(v=vs.105).aspx
+			//http://jacobkurien.wordpress.com/2013/06/30/other-apps-by-the-same-publisher-for-windows-phone-8/
+			await Windows.System.Launcher.LaunchUriAsync(new Uri(moreAppsUrl));	
+			
 			DispatchCommandResult(new PluginResult(PluginResult.Status.OK, "ok"));			
         }        
 
