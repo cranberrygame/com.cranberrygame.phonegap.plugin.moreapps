@@ -1,10 +1,30 @@
 <html>
-    <head>
-        <script type="text/javascript" src="cordova.js"></script>
-	</head>
-    <body>
+<head>
+	<script type="text/javascript" src="cordova.js"></script>
+</head>
+<body>
 
-      <p><button onclick="window.moreapps.openMoreAppsUrl('');">openMoreAppsUrl</button></p>
-    
-    </body>
+<script>
+
+//html5 website
+//var moreAppsUrl = "http://cranberrygame.com/";
+//android
+//var moreAppsUrl = "market://search?q=pub:cranberrygame";
+//blackberry10
+//var moreAppsUrl = "http://appworld.blackberry.com/webstore/vendor/38078";
+//ios
+//var moreAppsUrl = "https://itunes.apple.com/artist/id693048135";
+//windows8
+//var moreAppsUrl = "http://windows.microsoft.com/en-us/windows/search#q=cranberry&s=Store";
+//wp8
+var moreAppsUrl = "zune:search?publisher=cranberry";
+
+document.addEventListener("deviceready", function(){
+}, false);
+
+</script>
+
+<p><button onclick="window.moreapps.openMoreAppsUrl('');">openMoreAppsUrl</button></p>
+
+</body>
 </html>

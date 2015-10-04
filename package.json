@@ -1,0 +1,34 @@
+{
+  "name": "cordova-plugin-share-moreapps",
+  "version": "1.0.23",
+  "description": "Cordova MoreApps plugin",
+  "cordova": {
+    "id": "cordova-plugin-share-moreapps",
+    "platforms": [
+      "wp8"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cranberrygame/cordova-plugin-share-moreapps.git"
+  },
+  "keywords": [
+    "cordova",
+    "plugin",
+    "moreapps",
+    "ecosystem:cordova",
+    "cordova-wp8"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "cranberrygame",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cranberrygame/cordova-plugin-share-moreapps/issues"
+  },
+  "homepage": "https://github.com/cranberrygame/cordova-plugin-share-moreapps#readme"
+}
