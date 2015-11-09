@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-share-moreapps",
-  "version": "1.0.24",
+  "version": "1.0.25",
   "description": "Cordova MoreApps plugin",
   "cordova": {
     "id": "cordova-plugin-share-moreapps",
