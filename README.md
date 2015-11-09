@@ -62,6 +62,8 @@ window.moreapps.openMoreAppsUrl(moreAppsUrl);
 
 # Test #
 
+<img src="https://raw.githubusercontent.com/cranberrygame/cordova-plugin-share-moreapps/master/doc/wp8.png">
+
 # Useful links #
 
 Cordova Plugins<br>
