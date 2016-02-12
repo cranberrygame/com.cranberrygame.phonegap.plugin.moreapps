@@ -17,7 +17,7 @@
 
     <dependency id="cordova-plugin-inappbrowser" />	
 	
-    <js-module src="www/moreapps.js">
+    <js-module src="www/moreapps.js" name="moreapps">
         <clobbers target="window.moreapps"/>
     </js-module>
 	
